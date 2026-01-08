@@ -1,0 +1,2 @@
+eventOn(Mvu.events.COMMAND_PARSED,(e,a,s)=>{const t=s.match(/<content>(.*?)地点：(.*?)时间：([^<]*?)(?:<.*?)?职务身份：(.*?)玩家单位：(.*?)市场声誉：(.*?)精神状态：(.*?)现金：(.*?)((?:姓名：.*?职务身份：.*?关系：.*?)+)商业资产：(.*?)商业简报：(.*?)剧情简报：(.*?)方案一：(.*?)方案二：(.*?)方案三：(.*)/s);if(t){console.info('Detected legacy XML format, parsing...');const e=t[1];e&&a.push({type:'set',full_match:'legacy_xml_parse',args:['玩家.剧情文本',e.trim()],reason:'Legacy XML Parse'})}a.forEach(e=>{e.args[0]&&(e.args[0]=e.args[0].replace(/-/g,''))})});
+//# sourceMappingURL=index.js.map

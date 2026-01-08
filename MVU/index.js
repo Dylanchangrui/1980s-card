@@ -1,0 +1,2 @@
+var e={n:t=>{var n=t&&t.__esModule?()=>t.default:()=>t;return e.d(n,{a:n}),n},d:(t,n)=>{for(var o in n)e.o(n,o)&&!e.o(t,o)&&Object.defineProperty(t,o,{enumerable:!0,get:n[o]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)};const t=_;var n=e.n(t);eventOn(Mvu.events.VARIABLE_UPDATE_ENDED,(e,t)=>{const o=n().get(e,'stat_data.玩家.精神状态');void 0!==o&&o<20&&console.warn('玩家精神状态极低！')});
+//# sourceMappingURL=index.js.map
